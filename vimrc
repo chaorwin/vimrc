@@ -570,9 +570,9 @@ function! AutoSetFileHead()
 
         call append(line("."), "\# File Name: ".expand("%"))
 
-        call append(line(".")+1, "\# Author: GatieMe")
+        call append(line(".")+1, "\# Author: caorui")
 
-        call append(line(".")+2, "\# mail: gatieme@163.com")
+        call append(line(".")+2, "\# mail: caorui@163.com")
 
         call append(line(".")+3, "\# Created Time: ".strftime("%c"))
 
@@ -588,9 +588,9 @@ function! AutoSetFileHead()
 
         call append(line("."), "    > File Name: ".expand("%"))
 
-        call append(line(".")+1, "    > Author: GatieMe")
+        call append(line(".")+1, "    > Author: caorui")
 
-        call append(line(".")+2, "    > Mail: gatieme@163.com")
+        call append(line(".")+2, "    > Mail: caorui@163.com")
 
         call append(line(".")+3, "    > Created Time: ".strftime("%c"))
 
@@ -610,9 +610,9 @@ function! AutoSetFileHead()
 
         call append(line("."), "    > File Name: ".expand("%"))
 
-        call append(line(".")+1, "    > Author: GatieMe")
+        call append(line(".")+1, "    > Author: caorui")
 
-        call append(line(".")+2, "    > Mail: gatieme@163.com ")
+        call append(line(".")+2, "    > Mail: caorui@163.com ")
 
         call append(line(".")+3, "    > Created Time: ".strftime("%c"))
 
@@ -661,7 +661,7 @@ func! CompileRunGcc()
     if &filetype == 'c'
 		" 如果没有安装color_compile
 		" 安装方法参见
-		" http://blog.csdn.net/gatieme/article/details/44956967
+		" http://blog.csdn.net/caorui/article/details/44956967
 		if exists("/usr/local/bin/color_compile")
 
 			exec "!gcc % -o %< -lm -lpthread -Wall -std=gnu9x"
